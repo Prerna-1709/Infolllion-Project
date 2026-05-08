@@ -1,0 +1,34 @@
+/**
+ * initial-elements.js
+ *
+ * Mock tree structure:
+ *   Root
+ *   ├── A
+ *   │   ├── A1
+ *   │   └── A2
+ *   └── B
+ *       ├── B1
+ *       └── B2
+ *
+ * Positions are intentionally left at {x:0, y:0} because Dagre will
+ * compute the real positions inside useLayout.js.
+ */
+
+export const initialNodes = [
+  { id: 'root', data: { label: 'Root' }, position: { x: 0, y: 0 } },
+  { id: 'a',    data: { label: 'A' },    position: { x: 0, y: 0 } },
+  { id: 'b',    data: { label: 'B' },    position: { x: 0, y: 0 } },
+  { id: 'a1',   data: { label: 'A1' },   position: { x: 0, y: 0 } },
+  { id: 'a2',   data: { label: 'A2' },   position: { x: 0, y: 0 } },
+  { id: 'b1',   data: { label: 'B1' },   position: { x: 0, y: 0 } },
+  { id: 'b2',   data: { label: 'B2' },   position: { x: 0, y: 0 } },
+];
+
+export const initialEdges = [
+  { id: 'root-a',  source: 'root', target: 'a'  },
+  { id: 'root-b',  source: 'root', target: 'b'  },
+  { id: 'a-a1',   source: 'a',    target: 'a1' },
+  { id: 'a-a2',   source: 'a',    target: 'a2' },
+  { id: 'b-b1',   source: 'b',    target: 'b1' },
+  { id: 'b-b2',   source: 'b',    target: 'b2' },
+];

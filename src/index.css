@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* React Flow overrides */
+.react-flow__node {
+  font-family: inherit;
+}
